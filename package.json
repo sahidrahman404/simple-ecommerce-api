@@ -33,7 +33,7 @@
   "main": "index.js",
   "scripts": {
     "migrate": "ts-node ./node_modules/node-pg-migrate/bin/node-pg-migrate -j ts",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts | pino-pretty"
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "author": "rahman",
   "license": "ISC",
