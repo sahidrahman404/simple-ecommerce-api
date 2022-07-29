@@ -6,7 +6,7 @@ const transport = pino.transport({
   options: { colorize: true },
 });
 
-const log = pino(
+const logger = pino(
   {
     base: {
       pid: false,
@@ -16,4 +16,4 @@ const log = pino(
   transport
 );
 
-export default log;
+export default logger;
