@@ -13,8 +13,8 @@ import logger from "./utils/logger";
       password: config.get("password"),
     });
 
-    app().listen(3005, () => {
-      logger.info("Listening On Port 3005");
+    return app().listen(config.get("listeningPort"), () => {
+      logger.info(`Listening On Port ${config.get("listeningPort")}`);
     });
   } catch (err) {
     if (err instanceof Error) {
